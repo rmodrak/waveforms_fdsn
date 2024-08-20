@@ -47,3 +47,6 @@ gap_fraction: 1.0
 log_level: DEBUG
 write_files: 'weights_dist,sac_rtz'
 output_dir: 'resample=False,remove_response=False'
+mtuq_automater:
+  templates:
+  - templates/FullMomentTensor.SurfaceWaves.py
