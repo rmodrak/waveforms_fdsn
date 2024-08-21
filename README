@@ -1,0 +1,11 @@
+
+To download waveforms for all events in "events.tsv":
+
+
+1. >> conda activate pysep
+   >> append-path ~/devel/pysep_utils/bin
+   >> append-pythonpath ~/devel/pysep_utils/src
+
+2. >> setup.bash
+
+3. >> run.bash
