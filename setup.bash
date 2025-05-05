@@ -15,6 +15,12 @@ function iscomment {
 }
 
 
+if [ ! -e $1 ]; then
+    echo "File not found: $1"
+    exit -1
+fi
+
+
 while read line; do
   if $(iscomment "$line")
     then
@@ -25,5 +31,5 @@ while read line; do
   export PYSEP_TEMPLATE="$PWD/template.yaml"
   pysep_project $line
 
-done <events.tsv
+done <$1
 

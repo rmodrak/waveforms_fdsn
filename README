@@ -1,4 +1,14 @@
 
+DESCRIPTION
+-----------
+
+FDSN waveforms for use by MTUQ
+
+
+
+INITIAL DOWNLOAD
+----------------
+
 To download waveforms for all events in "events.tsv":
 
 
@@ -6,6 +16,19 @@ To download waveforms for all events in "events.tsv":
    >> append-path ~/devel/pysep_utils/bin
    >> append-pythonpath ~/devel/pysep_utils/src
 
-2. >> setup.bash
+2. >> setup.bash events.tsv
 
 3. >> run.bash
+
+4. >> push_waveforms <EVENT_NAME>
+
+
+
+SUBSEQUENT DOWNLOADS
+--------------------
+
+Waveforms will be available at
+
+    github.com/rmodrak/waveforms_fdsn/tree/<EVENT_NAME>
+
+
